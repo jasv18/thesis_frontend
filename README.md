@@ -5,6 +5,6 @@
 <div align="center"><h3>Descripci&oacute;n</h3></div>
 <p align="justify">Esta secci&oacute;n de la pila se dedica a proporcionar la interfaz para llevar a cabo la apertura de ejercicio fiscal y generar una nueva base de datos de tal manera que el sistema de gesti&oacute;n universitaria <strong>SUGAU</strong> pueda trabajar sobre una base de datos preparada.</p>
 <hr>
-<div align="center"><h3>Repositorio de frontend</h3></div>
+<div align="center"><h3>Repositorio de backend</h3></div>
 <div align="center"><a href="https://github.com/jasv18/thesis_backend.git"><img src="https://www.svgrepo.com/show/429925/coding-development-programming.svg" alt="fronend" width="50px" height="50px"></a></div>
 <hr>
