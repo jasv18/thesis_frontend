@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "José A Sanguinetti V",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
