@@ -1516,31 +1516,8 @@ body,
     height: 100%;
   }
 
-  .md\:h-max{
-    height: -moz-max-content;
-    height: max-content;
-  }
-
-  .md\:h-min{
-    height: -moz-min-content;
-    height: min-content;
-  }
-
-  .md\:h-fit{
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .md\:h-\[90\%\]{
-    height: 90%;
-  }
-
   .md\:max-h-full{
     max-height: 100%;
-  }
-
-  .md\:max-h-\[90\%\]{
-    max-height: 90%;
   }
 
   .md\:min-w-min{
