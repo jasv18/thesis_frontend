@@ -25,29 +25,12 @@ const Navigation = () => {
   }
 
   return (
-    <nav className={
-      `
-      min-w-max
-      md:basis-2/5
-      md:h-full
-      h-min
-      border-2
-      border-solid
-      flex
-      flex-col 
-      justify-start
-      gap-8
-      p-6
-      bg-gray-200
-      md:overflow-auto
-      `
-    }
-    >
+    <nav className='min-w-max md:basis-2/5 md:h-full h-min border-2 border-solid flex flex-col justify-start gap-8 p-6 bg-gray-200 md:overflow-auto'>
 
       <Frame tittle='Operaciones' className='border-light-pink'>
         <div className='flex gap-2 justify-start'>
           <ActionButton tittle='Añadir servidor' handleOnClick={handleLoginVisibility} disabled={showLogin}><ServerAddIcon className='text-white' /></ActionButton>
-          <ActionButton tittle='Remover servidor' handleOnClick={handleRemovingVisivility} disabled={showRemoveServers}><ServerRemoveIcon className='text-white' /></ActionButton>
+          {(servers.length > 0) ? <ActionButton tittle='Remover servidor' handleOnClick={handleRemovingVisivility} disabled={showRemoveServers}><ServerRemoveIcon className='text-white' /></ActionButton> : null}
         </div>
       </Frame>
 
