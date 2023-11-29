@@ -44,17 +44,23 @@ const Navigation = () => {
           : null
       }
 
-      <Frame tittle={showRemoveServers ? 'Remover' : 'Conexiones'} className='border-light-pink'>
-        {
-          (showRemoveServers)
-            ? (
-              <ListOfServersToRemove handleRemovingVisivility={handleRemovingVisivility} servers={servers} />
-              )
-            : (
-              <ListOfServers servers={servers} />
-              )
-        }
-      </Frame>
+      {
+        (servers.length > 0)
+          ? (
+            <Frame tittle={showRemoveServers ? 'Remover' : 'Conexiones'} className='border-light-pink'>
+              {
+                (showRemoveServers)
+                  ? (
+                    <ListOfServersToRemove handleRemovingVisivility={handleRemovingVisivility} servers={servers} />
+                    )
+                  : (
+                    <ListOfServers servers={servers} />
+                    )
+              }
+            </Frame>
+            )
+          : null
+      }
 
     </nav>
   )
