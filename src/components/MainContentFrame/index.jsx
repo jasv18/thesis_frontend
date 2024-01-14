@@ -43,9 +43,11 @@ const MainContentFrame = ({ tittle, server }) => {
   if (dbs && dbs.length !== 0) {
     return (
       <ContentFrame tittle={tittle}>
-        <article className='md:flex-[3] border-2 border-dark-blue md:max-h-full min-h-min rounded flex flex-col'>
+        <article className='md:flex-[3] border-2 border-dark-blue md:h-full min-h-min rounded flex flex-col'>
           <h2 className='w-full border-b-4 border-b-dark-blue text-dark-blue border-2 text-center rounded uppercase font-bold text-sm px-3'>bds</h2>
-          <div className='py-4 pl-4 pr-2 md:h-full'><ListOfDbs dbs={dbs} /></div>
+          <div className='py-4 pl-4 pr-2 min-h-min md:h-full overflow-y-auto'>
+            <ListOfDbs dbs={dbs} />
+          </div>
         </article>
         <Opening />
       </ContentFrame>
