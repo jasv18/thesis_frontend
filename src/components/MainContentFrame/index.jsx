@@ -7,9 +7,9 @@ import useSelectedDatabase from '../../hook/useSelectedDatabase'
 
 const ContentFrame = ({ children, tittle }) => {
   return (
-    <article className='max-h-min md:h-full border-2 border-dark-blue rounded flex flex-col'>
+    <article className='max-h-max h-full sm:min-h-min border-2 border-dark-blue rounded flex flex-col md:min-w-max'>
       <h1 className='w-full bg-dark-blue text-light-gray border-2 text-center rounded uppercase px-3 font-bold'>{tittle}</h1>
-      <div className='flex p-4 flex-col md:flex-row min-h-min md:h-full gap-1'>
+      <div className='flex p-4 flex-col md:flex-row h-full md:min-h-min gap-1'>
         {children}
       </div>
     </article>
@@ -43,7 +43,7 @@ const MainContentFrame = ({ tittle, server }) => {
   if (dbs && dbs.length !== 0) {
     return (
       <ContentFrame tittle={tittle}>
-        <article className='md:basis-2/5 border-2 border-dark-blue md:max-h-full min-h-min rounded flex flex-col'>
+        <article className='md:flex-[3] border-2 border-dark-blue md:max-h-full min-h-min rounded flex flex-col'>
           <h2 className='w-full border-b-4 border-b-dark-blue text-dark-blue border-2 text-center rounded uppercase font-bold text-sm px-3'>bds</h2>
           <div className='py-4 pl-4 pr-2 md:h-full'><ListOfDbs dbs={dbs} /></div>
         </article>

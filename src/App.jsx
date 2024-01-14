@@ -12,7 +12,7 @@ export default function App () {
   }, [])
 
   return (
-    <div className='app font-openSans text-xl flex flex-col md:flex-row gap-3 select-none min-w-min md:min-w-min'>
+    <div className='app font-openSans text-xl flex flex-col md:flex-row gap-3 select-none min-w-min md:min-w-min max-h-md'>
       <Navigation />
       <SelectedDatabaseProvider>
         <MainContent />

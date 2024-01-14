@@ -64,7 +64,7 @@ const Opening = () => {
 
   if (isLoadingPayrolls) {
     return (
-      <div className='md:h-full w-full flex place-content-center place-items-center text-light-pink'>
+      <div className='md:h-full md:flex-[7] flex place-content-center place-items-center text-light-pink'>
         <BlocksShuffleThree className='h-16 m-0' />
       </div>
     )
@@ -72,10 +72,10 @@ const Opening = () => {
 
   if (databaseSelected && payrolls !== null) {
     return (
-      <article className='md:flex-grow border-2 border-dark-blue md:max-h-full min-h-min rounded'>
+      <article className='md:flex-[7] border-2 border-dark-blue rounded flex flex-col h-full'>
         <h2 className='w-full border-b-4 border-b-dark-blue text-dark-blue border-2 text-center rounded uppercase font-bold text-sm px-3'>aperturar bd</h2>
         <form onSubmit={handleSubmit}>
-          <div className='grid gap-4 p-4 text-base'>
+          <div className='flex flex-col gap-4 p-4 text-base min-h-max'>
             <div>
               <label htmlFor='newdatabasename' className='block mb-2 text-gray-900'>
                 Nombre de base de datos <sup className='text-dark-pink' title='Requerido'>*</sup>
@@ -137,14 +137,14 @@ const Opening = () => {
 
   if (databaseSelected && payrolls === null) {
     return (
-      <div className='md:flex-grow md:h-full h-min w-full flex place-content-center place-items-center text-light-pink uppercase font-bold sm:text-sm text-xs md:my-0 my-10 text-center'>
+      <div className='md:flex-[7] md:h-full h-min w-full flex place-content-center place-items-center text-light-pink uppercase font-bold sm:text-sm text-xs md:my-0 my-10 text-center'>
         No se han recuperado nóminas
       </div>
     )
   }
 
   return (
-    <div className='md:flex-grow md:h-full h-min w-full flex place-content-center place-items-center text-light-pink uppercase font-bold sm:text-sm text-xs md:my-0 my-10 text-center'>
+    <div className='md:flex-[7] md:h-full h-min w-full flex place-content-center place-items-center text-light-pink uppercase font-bold sm:text-sm text-xs md:my-0 my-10 text-center'>
       No hay base de datos seleccionada
     </div>
   )
