@@ -655,15 +655,6 @@ input[type='number']::-webkit-outer-spin-button,
   height: min-content;
 }
 
-.max-h-min{
-  max-height: -moz-min-content;
-  max-height: min-content;
-}
-
-.max-h-full{
-  max-height: 100%;
-}
-
 .max-h-max{
   max-height: -moz-max-content;
   max-height: max-content;
@@ -677,14 +668,14 @@ input[type='number']::-webkit-outer-spin-button,
   min-height: 50px;
 }
 
-.min-h-min{
-  min-height: -moz-min-content;
-  min-height: min-content;
-}
-
 .min-h-max{
   min-height: -moz-max-content;
   min-height: max-content;
+}
+
+.min-h-min{
+  min-height: -moz-min-content;
+  min-height: min-content;
 }
 
 .w-10\/12{
@@ -711,10 +702,6 @@ input[type='number']::-webkit-outer-spin-button,
 .min-w-min{
   min-width: -moz-min-content;
   min-width: min-content;
-}
-
-.max-w-md{
-  max-width: 28rem;
 }
 
 .transform{
@@ -801,14 +788,6 @@ input[type='number']::-webkit-outer-spin-button,
 
 .gap-8{
   gap: 2rem;
-}
-
-.overflow-auto{
-  overflow: auto;
-}
-
-.overflow-hidden{
-  overflow: hidden;
 }
 
 .overflow-y-auto{
@@ -1028,8 +1007,7 @@ input[type='number']::-webkit-outer-spin-button,
 }
 
 .pe-2{
-  -webkit-padding-end: 0.5rem;
-          padding-inline-end: 0.5rem;
+  padding-inline-end: 0.5rem;
 }
 
 .pl-4{
@@ -1549,16 +1527,8 @@ body,
     height: 100%;
   }
 
-  .md\:h-\[760px\]{
-    height: 760px;
-  }
-
-  .md\:h-\[820px\]{
-    height: 820px;
-  }
-
-  .md\:max-h-full{
-    max-height: 100%;
+  .md\:min-h-\[760px\]{
+    min-height: 760px;
   }
 
   .md\:min-h-min{
@@ -1566,13 +1536,9 @@ body,
     min-height: min-content;
   }
 
-  .md\:min-h-max{
-    min-height: -moz-max-content;
-    min-height: max-content;
-  }
-
-  .md\:min-h-\[760px\]{
-    min-height: 760px;
+  .md\:min-w-max{
+    min-width: -moz-max-content;
+    min-width: max-content;
   }
 
   .md\:min-w-min{
@@ -1580,29 +1546,12 @@ body,
     min-width: min-content;
   }
 
-  .md\:min-w-max{
-    min-width: -moz-max-content;
-    min-width: max-content;
-  }
-
-  .md\:flex-1{
-    flex: 1 1 0%;
-  }
-
-  .md\:flex-\[7\]{
-    flex: 7;
-  }
-
   .md\:flex-\[3\]{
     flex: 3;
   }
 
-  .md\:flex-grow{
-    flex-grow: 1;
-  }
-
-  .md\:basis-2\/5{
-    flex-basis: 40%;
+  .md\:flex-\[7\]{
+    flex: 7;
   }
 
   .md\:flex-row{
