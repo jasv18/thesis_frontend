@@ -73,7 +73,7 @@ const Opening = () => {
   if (databaseSelected && payrolls !== null) {
     return (
       <article className='md:flex-[7] border-2 border-dark-blue rounded flex flex-col h-full'>
-        <h2 className='w-full border-b-4 border-b-dark-blue text-dark-blue border-2 text-center rounded uppercase font-bold text-sm px-3'>aperturar bd</h2>
+        <h2 className='w-full border-b-4 border-b-dark-blue text-dark-blue border-2 text-center rounded uppercase font-bold text-sm px-3'>apertura de bd</h2>
         <form onSubmit={handleSubmit}>
           <div className='flex flex-col gap-4 p-4 text-base min-h-max'>
             <div>
